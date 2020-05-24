@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Student Attendance Management System</title>
-    <link rel="stylesheet" href="style.css" />
-    
-  </head>
-  <body>
-    <!-- header -->
-      <div class="headeronpage">   
-     <?php include './header.php';  ?>
-    </div>  
-    <!-- content -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="head.css">
+</head>
+<body>
+<!-- content -->
     <main class="main container">
       <div class="logindiv">
       <form class="login_form" action="login_verify.php" method="post">
@@ -45,9 +39,5 @@
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>       -->
     </main>
-    <div>
-      <?php include 'footer.php' ?>
-    </div>  
-
-  </body>
+</body>
 </html>

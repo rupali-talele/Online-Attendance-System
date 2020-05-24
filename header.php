@@ -7,24 +7,14 @@
 </head>
 <body>
   <header class="header">
-    <div id="mainheading" class=" container">
-      <div id="logo">
+    <div class="mainheading container">
+      <div class="logo">
           <img id="logoimg" src="./images/mit_logo.png" alt="MIT Logo">
       </div>
-      <!-- <div > -->
-          <h1  id="heading">STUDENT ATTENDANCE SYSTEM</h1>
+      <div class="heading">
+          <h1 class="header_heading">STUDENT ATTENDANCE SYSTEM</h1>
       </div>
-    <!-- </div> -->
-    <!-- <nav id="mainnav">
-      <ul class="list">
-        <li class="listitems"><a href="#" class="links">About</a></li>
-        <li class="listitems"><a href="#" class="links">Contact us</a></li>
-      </ul>
-    </nav> -->
-    
+    </div>
   </header>
-      <!-- <br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>       -->
 </body>
 </html>
