@@ -11,40 +11,56 @@
     <!-- header -->
       <div class="headeronpage">   
      <?php include './header.php';  ?>
-    </div>  
-    <!-- content -->
+    </div>
+<!-- content -->
+    <div class="content">
     <main class="main container">
       <div class="logindiv">
       <form class="login_form" action="login_verify.php" method="post">
-        <fieldset class="login">
           
-          <label class="label" for="userid">Username</label>
-          <br>
-          <input class="inputbox" type="text" id="userid" name="userid" placeholder="Username" />
-          <br />
-          <br />
+        <!-- username -->
+          <div class="form-item">
+            <label class="label" for="userid">Username</label>
+          </div>
+          
+          <div class="form-item">
+             <input class="inputbox" type="text" id="userid" name="userid" placeholder=" Username" />
+          </div>
 
-          <label class="label" for="pwd">Password</label>
-          <br>
-          <input class="inputbox" type="password" name="pwd" id="pwd" placeholder="*******" />
-          <br />
-          <br />
+        <!-- password -->
 
-          <input id="checkbox" type="checkbox" name="rememberme" id="rememberme" />
-          <label for="rememberme">Remember me</label>
-          <br />
-          <br />
+        <div class="form-item">
+            <label class="label" for="pwd">Password</label>
+        </div>
+          
+        <div class="form-item">
+          <input class="inputbox" type="password" name="pwd" id="pwd" placeholder=" ***********" />
+        </div>
+        
+        <!-- remember me  -->
 
+        <div class="form-item">
+          <input class="checkbox" type="checkbox" name="rememberme" id="rememberme" />
+          <label class="label checkbox" for="rememberme">Remember me</label>        
+        </div>  
+
+        <!-- submit button  -->
+
+        <div class="form-item">
           <input class="button" type="submit" value="LOGIN" />
-          <p class="signuppara" >Don't have an account? Click <a href="#">here</a> to register</p>
+        </div>
 
-        </fieldset>
+        <!-- signup option  -->
+        <div class="form-item">
+          <p class="label signuppara" >Don't have an account? Click <a href="#">here</a> to register</p>
+        </div>
+
       </form>
       </div>
-    <!-- <br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>       -->
-    </main>
+      
+     </main>
+     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
     <div>
       <?php include 'footer.php' ?>
     </div>  

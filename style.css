@@ -73,10 +73,16 @@ img {
   .header_heading {
     font-size: 2vw;
   }
+  .label {
+    font-size: 1.2vw;
+  }
 }
 @media screen and (max-width: 300px) {
   .header_heading {
     font-size: 1.5vw;
+  }
+  .label {
+    font-size: 1vw;
   }
 }
 
@@ -86,6 +92,7 @@ img {
   height: 5vh;
   margin: auto;
   bottom: 0;
+  position: fixed;
   background-color: #0a156f;
 }
 
@@ -108,85 +115,75 @@ img {
 }
 
 /* index.php */
+
+.content {
+  height: calc(100vh - 8vh - 5vh);
+  width: 100%;
+  /* top: 10vh; */
+  position: absolute;
+  /* display: flex; */
+
+  top: 8vh;
+}
+
 .main {
-  height: 85vh;
+  /* background-color: teal; */
+  height: 100%;
+  display: flex;
+  /* margin-top: 8vh 0; */
+  justify-content: center;
+}
+
+.logindiv {
+  /* background-color: white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
 }
 
 .login_form {
   width: 90%;
-  height: 90%;
-  margin: auto;
-}
-.logindiv {
-  width: 40%;
-  margin: 20vh auto;
-
-  /* height: calc(100vh-6vh); */
-  height: 60vh;
-  /* border: 2px red solid; */
+  /* background-color: tomato; */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 70%;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.login {
+.form-item {
   width: 90%;
-  margin: auto;
-  background-color: whitesmoke;
-  /* width: 90%;
-  
-  height: 90%;
-  margin: auto; */
-  /* text-align: center; */
-  /* text-align: left; */
-  /* border: 2px red solid; */
-  padding: 3vh 3vh;
-  font-size: 1vw;
-  font-family: fantasy;
+  /* background-color: teal; */
+  display: flex;
+  align-items: center;
+  height: 10%;
+  /* vertical-align: middle; */
+}
+.inputbox {
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+  width: 100%;
+  background-color: #0a156f;
+  height: 100%;
+  color: whitesmoke;
+}
+
+.checkbox {
+  padding: 1vh 1vw;
 }
 
 .label {
-  width: 100%;
-  /* border: 2px red solid; */
-  /* text-align: left; */
-  /* padding: 0.5em 0; */
-  font-size: 1vw;
-  margin: 3vh auto;
-}
-.inputbox {
-  height: 4vh;
-  width: 100%;
-  text-align: left;
-  /* border: 2px red solid; */
-  padding: 0.5vh 0.5vw;
-  margin: 2vh auto;
-}
-.button {
-  width: 100%;
-  height: 5vh;
-  margin: 2vh auto;
-  /* margin: 0 10px 10px 20px; */
-  padding: 0.5vh 0.5vw;
-  text-align: left;
-  background-color: #0a156f;
-  color: white;
-  text-align: center;
-  font-size: 1em;
-}
-#checkbox {
-  /* text-align: left; */
-  /* border: 2px red solid; */
-  /* padding: 0.2em 0;
-  margin: 0 10px 10px 20px; */
-  margin: 2vh auto;
-  padding: 0.5vh 0.5vw;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .signuppara {
-  /* text-align: left; */
-  /* border: 2px red solid; */
-  margin: 2vh auto;
-  padding: 0.5vh 0.5vw;
-  /* text-align: center; */
-}
-
-.signuppara a {
-  text-decoration: none;
-  color: #0a156f;
+  letter-spacing: 0.01rem;
+  /* background-color: teal; */
+  width: 100%;
+  text-align: center;
 }
