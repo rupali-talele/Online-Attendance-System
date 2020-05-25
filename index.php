@@ -9,7 +9,7 @@
   </head>
   <body>
     <!-- header -->
-      <div class="headeronpage">   
+      <div>   
      <?php include './header.php';  ?>
     </div>
 <!-- content -->
@@ -45,21 +45,23 @@
         </div>  
 
         <!-- submit button  -->
-
-        <div class="form-item">
-          <input class="button" type="submit" value="LOGIN" />
+        <div class="login_button_div">
+          <!-- <div class="form-item"> -->
+            <input class="button" type="submit" value="LOGIN" />
+          <!-- </div> -->
         </div>
+
 
         <!-- signup option  -->
         <div class="form-item">
-          <p class="label signuppara" >Don't have an account? Click <a href="#">here</a> to register</p>
+          <p class="label signuppara" >Don't have an account? Click <a href="./signup_database.php">here</a> to register</p>
         </div>
 
       </form>
       </div>
       
      </main>
-     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+     <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
     </div>
     <div>
       <?php include 'footer.php' ?>
