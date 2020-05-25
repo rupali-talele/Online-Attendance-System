@@ -54,7 +54,7 @@
 
         <!-- signup option  -->
         <div class="form-item">
-          <p class="label signuppara" >Don't have an account? Click <a href="./signup_database.php">here</a> to register</p>
+          <p class="label signuppara" >Don't have an account? Click <a href="./signup.php">here</a> to register</p>
         </div>
 
       </form>

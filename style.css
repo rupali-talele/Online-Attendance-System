@@ -26,6 +26,9 @@ img {
   margin: auto;
 }
 
+a {
+  text-decoration: none;
+}
 /* header.php */
 
 .header {
@@ -253,5 +256,23 @@ img {
 }
 
 .signup_label {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* signup_database.php */
+
+.message {
+  background-color: whitesmoke;
+  height: 50%;
+  border: 2px red solid;
+  text-align: center;
+  width: 30%;
+  margin: auto;
+  color: #0a156f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vh;
+  /* vertical-align: middle; */
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
