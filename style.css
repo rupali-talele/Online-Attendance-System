@@ -441,11 +441,12 @@ a {
   margin-top: 2rem;
 }
 .courselist-table,
-courselist-table td,
-courselist-table th {
+.courselist-table td,
+.courselist-table th {
   border-collapse: collapse;
   border: 0.1rem black solid;
-  width: 50%;
+  width: 20%;
+  padding: 1rem;
 }
 
 /* view_attendance.php */
@@ -492,9 +493,9 @@ courselist-table th {
   width: 80%;
 }
 .attendance_table,
-tr,
-td,
-th {
+.attendance_table tr,
+.attendance_table td,
+.attendance_table th {
   margin-top: 2rem;
   border: 0.1rem black solid;
   /* width: 90%; */
@@ -517,4 +518,40 @@ th {
   font-weight: bold;
   text-align: center;
   margin-top: 2rem;
+}
+
+/* check_schedule.php */
+.schedulediv {
+  width: 50%;
+  background-color: whitesmoke;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 70%;
+}
+
+.schedule_table {
+  width: 80%;
+}
+.schedule_table,
+.schedule_table th,
+.schedule_table td {
+  margin: 2rem 0;
+  /* width: 80%; */
+  border: 0.1rem black solid;
+  /* width: 90%; */
+  text-align: center;
+  padding: 1vh 1vw;
+  border-collapse: collapse;
+}
+
+.schedule-item {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.schedule-item h6 {
+  text-align: center;
 }

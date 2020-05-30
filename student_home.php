@@ -24,7 +24,7 @@ if(isset($_SESSION['username']))
         <div class="courses_enrolled">
              <div class="course-list">
                 <div>
-                <h6 class="courselist-item course">You have enrolled in following courses</h6>
+                <h6 class="courselist-item course">You have enrolled in following courses for this semester</h6>
                 </div>
                 <div>';
             // error_reporting(0);
