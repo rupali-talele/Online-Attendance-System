@@ -142,6 +142,7 @@ a {
   display: flex;
   /* margin-top: 8vh 0; */
   justify-content: center;
+  /* align-items: center; */
 }
 
 .logindiv {
@@ -159,7 +160,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  height: 70%;
+  height: 80%;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -205,6 +206,13 @@ a {
   justify-content: center;
 }
 
+.errormsg {
+  color: red;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2vh;
+  font-weight: bold;
+}
+
 /* signup.php */
 
 .signupdiv {
@@ -221,7 +229,6 @@ a {
   background-color: white;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   height: 80%;
   align-items: center;
   justify-content: space-evenly;
@@ -297,4 +304,126 @@ a {
   align-items: center;
 
   background-color: whitesmoke;
+}
+
+/* forgot_password.php */
+
+.frgtpwd-form-item {
+  width: 90%;
+  /* background-color: teal; */
+  display: flex;
+  align-items: center;
+  height: 10%;
+  /* vertical-align: middle; */
+}
+
+.frgtpwd-button {
+  width: 60%;
+  background-color: #0a156f;
+  height: 5vh;
+  color: whitesmoke;
+}
+/* 
+.frgtpwd_button_div {
+  display: flex;
+  width: 90%;
+  background-color: teal;
+  justify-content: center;
+} */
+
+.frgtpwd-inputbox {
+  width: 90%;
+  height: 90%;
+}
+
+.frgtpwd-button {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.frgtpwddiv {
+  /* background-color: black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+.frgtpwd_form {
+  width: 60%;
+  /* background-color: tomato; */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* header_after_login.php */
+.navbar {
+  /* background-color: black; */
+  height: 8vh;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navlist {
+  width: 70%;
+  /* background-color: tomato; */
+}
+
+.logo_after_login {
+  width: 20%;
+}
+.nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.logout-btn-div {
+  /* background-color: red; */
+  width: 50%;
+  height: 8vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.logout-btn {
+  /* width: 30%; */
+  background-color: #0a156f;
+  padding: 0.5vh;
+  height: 5vh;
+  color: whitesmoke;
+}
+.nav-list-items {
+  color: #0a156f;
+  font-size: 1.2vw;
+  width: 100%;
+  padding-top: 1rem;
+  text-transform: uppercase;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 400;
+}
+/* student_home.php  */
+
+.course {
+  font-size: 1.2vw;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* text-align: center;/ */
+  padding-top: 1rem;
+  width: 100%;
+  /* background-color: tomato; */
+}
+
+.courses_enrolled {
+  display: flex;
+  background-color: whitesmoke;
+  width: 60%;
+  height: 80%;
+}
+.course-item {
+  width: 900%;
+  /* background-color: teal; */
 }
