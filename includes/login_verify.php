@@ -24,6 +24,8 @@ if(isset($_POST['login-btn'])){
                     session_start();
                     $_SESSION['username'] = $userid;
                     $_SESSION['id'] = $row['idUsers'];
+                    // echo $_SESSION['username'];
+                    // echo $_SESSION['id'];
                     header("Location: ../student_home.php");
                     exit();
                 }
