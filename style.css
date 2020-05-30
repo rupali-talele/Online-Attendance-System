@@ -215,7 +215,7 @@ a {
 
 /* signup.php */
 
-.close{
+.close {
   position: absolute;
   top: 0.5rem;
   right: 0.2rem;
@@ -223,7 +223,7 @@ a {
   width: 5%;
 }
 
-.close-btn{
+.close-btn {
   /* background-color: teal; */
   font-size: large;
   padding: 0.1rem;
@@ -545,8 +545,8 @@ a {
   flex-direction: column;
   justify-content: flex-start;
   /* background-image: url("./images/schedule.png"); */
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), */
-    url("./images/schedule.png");
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+    url("./images/schedule.png");*/
   background-position: center;
   background-repeat: no-repeat;
   /* background-size: cover; */
