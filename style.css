@@ -215,6 +215,21 @@ a {
 
 /* signup.php */
 
+.close{
+  position: absolute;
+  top: 0.5rem;
+  right: 0.2rem;
+  /* background-color: tomato; */
+  width: 5%;
+}
+
+.close-btn{
+  /* background-color: teal; */
+  font-size: large;
+  padding: 0.1rem;
+  width: 80%;
+  background-color: whitesmoke;
+}
 .signupdiv {
   /* background-color: white; */
   display: flex;
@@ -227,6 +242,7 @@ a {
   width: 90%;
   /* background-color: tomato; */
   background-color: white;
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 80%;
@@ -528,6 +544,12 @@ a {
   align-self: center;
   flex-direction: column;
   justify-content: flex-start;
+  /* background-image: url("./images/schedule.png"); */
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), */
+    url("./images/schedule.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
   height: 70%;
 }
 

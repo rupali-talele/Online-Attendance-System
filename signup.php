@@ -24,6 +24,9 @@
             </form> -->
 
             <form class="signup_form" action="./includes/signup_verify.php" method="post">
+                  <div class="close">
+                  <a href="./index.php" ><input type="button" value="X" class="close-btn"></a>
+                </div>
               <!-- <div class="signup_form-item">
                 <label class="signup_label" for="fname">First Name</label>
                 <input class="signup_inputbox" type="text" id="fname" name="fname" placeholder=" First Name" required/>
@@ -149,6 +152,7 @@
               </div> -->
               <div class="signup_button_div">
                 <input class="signup_button" type="submit" value="SIGN UP"  name="signup-btn"/>
+                <!-- <a href= "./index.php" ><input class="close_button" type="button" value="CLOSE"  name="close-btn"/></a> -->
               </div>
               <?php
               }
