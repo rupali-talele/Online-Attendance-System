@@ -218,7 +218,7 @@ a {
 .close {
   position: absolute;
   top: 0.5rem;
-  right: 0.2rem;
+  right: 0.1rem;
   /* background-color: tomato; */
   width: 5%;
 }
@@ -235,7 +235,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 80%;
 }
 
 .signup_form {
@@ -251,7 +251,7 @@ a {
 }
 
 .signup_form-item {
-  width: 90%;
+  width: 80%;
   /* background-color: teal; */
   display: flex;
   justify-content: space-between;
@@ -260,7 +260,7 @@ a {
   /* vertical-align: middle; */
 }
 .signup_inputbox {
-  width: 60%;
+  width: 50%;
   height: 100%;
 }
 
@@ -613,4 +613,62 @@ text-align: center;
 {
   /*text-align: center;*/
   padding:0.5rem 1.5rem ;
+}
+
+/*forgot_password.php*/
+
+.forgotpwddiv
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.forgotpwd_form{
+  width: 70%;
+  /* background-color: tomato; */
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.forgotpwd-item{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+}
+.forgotpwd_label{
+font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.forgotpwd_inputbox{
+    width: 50%;
+  height: 100%;
+}
+
+
+.forgot-button {
+  width: 30%;
+  text-align: center;
+  background-color: #0a156f;
+  height: 5vh;
+  color: whitesmoke;
+}
+
+.forgotpwd-btn-div {
+  display: flex;
+  width: 90%;
+  align-self:center;
+  justify-content: center;
+}
+
+#hideemail
+{
+  display: none;
 }

@@ -146,6 +146,21 @@
                 ?>                
                 
               </div> 
+              <div class="signup_form-item">
+                <label class="signup_label" for="secquest">Security Question</label>
+                <select class="signup_inputbox" name="secquest" id="secquest ">Security Question
+                <option value="Which city were you born in?">Which city were you born in?</option>
+                <option value="What is your Mother's Name?">What is your Mother's Name?</option>
+                <option value="Which is your favourite place for vacation?">Which is your favourite place for vacation?</option>
+                </select>
+              </div>
+              
+              <div class="signup_form-item">
+                <label class="signup_label" for="secans">Security Answer</label>
+                <input class="signup_inputbox" type="text" name="secans" id="secans" placeholder=" Security Answer " />
+              </div>
+
+
               <!-- <div class="signup_form-item">
                 <label class="signup_label" for="uniqid">Unique Identification Number</label>
                 <input class="signup_inputbox" type="text" name="uniqid" id="uniqid" placeholder=" Unique Identification Number" required/>

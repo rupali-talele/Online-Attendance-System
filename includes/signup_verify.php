@@ -10,6 +10,8 @@
             $email = $_POST['email'];
             $id = $_POST['id'];
             $retypepwd = $_POST['retype-pwd'];
+            $secquest = $_POST['secquest'];
+            $secans = $_POST['secans'];
 
             // check if mail and userid valid
             if (!preg_match("/^[a-zA-z0-9]*$/",$userid) && !filter_var($email,FILTER_VALIDATE_EMAIL) && !preg_match("/^[0-9]*$/",$id)){
@@ -77,7 +79,7 @@
                                 } 
                             else{
                                 //insert into database
-                                $query = "insert into login_info (idUsers,usernameUsers,pwdUsers,emailUsers) values (?,?,?,?)";
+                                $query = "insert into login_info (idUsers,usernameUsers,pwdUsers,emailUsers,securityquestion,securityanswer) values (?,?,?,?,?,?)";
                                 $stmt = mysqli_stmt_init($conn);
                                 if(!mysqli_stmt_prepare($stmt,$query)){
                                     header("Location: ../signup.php?error=sqlerror");
@@ -85,7 +87,7 @@
                                 }    
                                 else{
                                     $hashedpwd = password_hash($pwd,PASSWORD_DEFAULT);
-                                    mysqli_stmt_bind_param($stmt,"dsss",$id,$userid,$hashedpwd,$email);
+                                    mysqli_stmt_bind_param($stmt,"dsssss",$id,$userid,$hashedpwd,$email,$secquest,$secans);
                                     mysqli_stmt_execute($stmt);   
                                     header("Location: ../signup.php?signupdone=success");
                                     exit();                                                               

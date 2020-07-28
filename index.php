@@ -67,14 +67,6 @@
         </div>
 
 
-        
-        <!-- remember me  -->
-
-        <div class="form-item">
-          <input class="checkbox" type="checkbox" name="rememberme" id="rememberme" />
-          <label class="label checkbox" for="rememberme">Remember me</label>        
-        </div>  
-
         <div class="form-item">
           <p class="label forgotpwd" ><a href="./forgot_password.php">Forgot Password? </a></p>
         </div>        
