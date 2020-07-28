@@ -26,7 +26,7 @@ if(isset($_POST['login-btn'])){
                     $_SESSION['id'] = $row['idUsers'];
                     // echo $_SESSION['username'];
                     // echo $_SESSION['id'];
-                    header("Location: ../student_home.php");
+                    header("Location: ../courses.php");
                     exit();
                 }
                 else if($pwd_verify == false) {

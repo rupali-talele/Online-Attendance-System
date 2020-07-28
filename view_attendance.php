@@ -33,17 +33,32 @@ if(!isset($_SESSION['username'])){
         <select name="coursesenrolled" id="coursesenrolled" class="select">
             <?php
             // echo 'dbconnection';
+            $months = [
+                '01' => 'January',
+                '02' => 'February',
+                '03' => 'March',
+                '04' => 'April',
+                '05' => 'May',
+                '06' => 'June',
+                '07' => 'July',
+                '08' => 'August',
+                '09' => 'September',
+                '10' => 'October',
+                '11' => 'November',
+                '12' => 'December'                
+            ];
             require('./includes/dbconnection.php');
             session_start();
             // echo $_SESSION['id'];
-            $query = "select coursename from courses where semesterCourse = (select semesterStudent from student where studentidStudent=".$_SESSION['id'].");";
+            // $query = "select coursename from courses where semesterCourse = (select semesterStudent from student where studentidStudent=".$_SESSION['id'].");";
+            $query = "select distinct courseid,coursename from courses, student,enrolled where semesterCourse = (select semesterStudent from student where studentidStudent=".$_SESSION['id'].") and courseid=courseidEnrolled";
                 // echo 'execute';
                 // echo $query;
                 if( $result = mysqli_query($conn,$query)){
                     //  echo 'execute successful';
                     while ($row = mysqli_fetch_row($result)) {
                         // echo $row[0];
-                        echo '<option value='.$row[0].' class="course">'.$row[0].'</option>';
+                        echo '<option value='.$row[0].' class="course">'.$row[1].'</option>';
                     }
                 }
             ?>
@@ -78,13 +93,24 @@ if(!isset($_SESSION['username'])){
         if(isset($_POST['attendance-btn'])){
             error_reporting(0);
             session_start();
-            $query = 'select dateAttendance,statusAttendance from attendance WHERE cidAttendance = (select courseid from courses where coursename="'.$_POST['coursesenrolled'].'") and sidAttendance = '.$_SESSION['id'].' and (SELECT EXTRACT(MONTH FROM dateAttendance)) = '.$_POST['course-month'].';';
+            $query = 'select dateAttendance,statusAttendance from attendance WHERE cidAttendance = '.$_POST['coursesenrolled'].' and sidAttendance = '.$_SESSION['id'].' and (SELECT EXTRACT(MONTH FROM dateAttendance)) = '.$_POST['course-month'].'';
             // echo $query;
                 if( $result = mysqli_query($conn,$query)){
-                    //  echo 'execute successful';
                     $rows = mysqli_num_rows($result);
                     if($rows>0){
-                    echo '<div class="attendancediv-item"><table class="attendance_table">
+                    $query1 = 'select coursename from courses where courseid ='.$_POST['coursesenrolled'].'';
+                    if($result1 = mysqli_query($conn,$query1))
+                    {
+                        $row1 = mysqli_fetch_row($result1); 
+                    }
+                    echo '<div class="attendancediv-item">
+
+                    <p class="empty_rows"> Course : '.$row1[0].' </p> 
+                    <p class="empty_rows">Month : '.$months[$_POST['course-month']].'</p>
+                    <p class="empty_rows">Total present days : '.$rows.'</p>
+                    </div>
+                    <div class="attendancediv-item">
+                    <table class="attendance_table">
                     <tr>
                     <th>Date</th>
                     <th>Attendance Status</th>

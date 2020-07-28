@@ -31,12 +31,13 @@ if(!isset($_SESSION['username'])){
                 <th>Time</th>
             </tr> -->
                 <div class="schedule-item">
-                <h6 class="courselist-item course">Your schedule for this semester</h6>
+                <h2 class="courselist-item course">Your schedule for this semester</h2>
                 </div>  
             <div class="schedule-item">          
             <?php
                 require('./includes/dbconnection.php');
-                $query = "select coursenameSchedule,daySchedule,starttimeSchedule,endtimeSchedule from schedule where semesterSchedule =".$_SESSION['id'].";";
+                // $query = "select coursenameSchedule,daySchedule,starttimeSchedule,endtimeSchedule from schedule where semesterSchedule =".$_SESSION['id'].";";
+                 $query = "select distinct coursename,daySchedule,starttimeSchedule,endtimeSchedule from schedule,courses,student,enrolled where courseid=cidSchedule and courseid=courseidEnrolled and semesterSchedule = (select semesterStudent from student where studentidStudent=".$_SESSION['id'].")";
                 // echo $query;
                 if( $result = mysqli_query($conn,$query)){
                     $rows = mysqli_num_rows($result);

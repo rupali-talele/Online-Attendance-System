@@ -8,18 +8,17 @@
 <body>
   <header class="header">
     <div class="mainheading container">
-      <div class="logo">
-          <img id="logoimg" src="./images/mit_logo.png" alt="MIT Logo">
-      </div>
       <?php
       session_start();
         if(isset($_SESSION['username'])){
           echo '<div class="navbar">
                   <div class="navlist">
                   <ul class="nav">
-                      <li ><a href="student_home.php" class="nav-list-items" >Home</a> </li>
-                      <li ><a href="view_attendance.php" class="nav-list-items">View Attendance</a> </li>
+                      <li ><a href="myprofile.php" class="nav-list-items" >My Profile</a> </li>
+                      <li ><a href="courses.php" class="nav-list-items" >Courses </a> </li>
                       <li ><a href="check_schedule.php" class="nav-list-items">Check Schedule</a> </li>
+                      <li ><a href="view_attendance.php" class="nav-list-items">View Attendance</a> </li>
+                      
                   </ul>
                   </div>
                   <div class="logout-btn-div">

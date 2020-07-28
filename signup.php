@@ -130,18 +130,18 @@
 
               <!-- check if student/employee id value is available in url  -->
               <div class="signup_form-item">
-                <label class="signup_label" for="id">Student/Employee ID</label>
+                <label class="signup_label" for="id">Student ID</label>
                 <?php
                   if(isset($_GET['error'])){
                       if($_GET['error']!='invalidmailuseridid' && $_GET['error']!='invalidid'){
-                        echo '<input class="signup_inputbox" type="text" name="id" id="id" placeholder=" Student / Employee ID" value='.$_GET['id'].' required/>';
+                        echo '<input class="signup_inputbox" type="text" name="id" id="id" placeholder=" Student ID" value='.$_GET['id'].' required/>';
                       }
                       else{
-                        echo ' <input class="signup_inputbox" type="text" name="id" id="id" placeholder=" Student / Employee ID" />';
+                        echo ' <input class="signup_inputbox" type="text" name="id" id="id" placeholder=" Student ID" />';
                       }
                   }
                   else{
-                    echo ' <input class="signup_inputbox" type="text" name="id" id="id" placeholder=" Student / Employee ID" />';
+                    echo ' <input class="signup_inputbox" type="text" name="id" id="id" placeholder=" Student ID" />';
                   }
                 ?>                
                 

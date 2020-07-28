@@ -361,12 +361,13 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 60%;
 }
 
 .frgtpwd_form {
   width: 60%;
   /* background-color: tomato; */
+  position: relative;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -380,7 +381,7 @@ a {
 .navbar {
   /* background-color: black; */
   height: 8vh;
-  width: 70%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -422,49 +423,49 @@ a {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 400;
 }
-/* student_home.php  */
-
-.course {
-  font-size: 1.2vw;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  /* text-align: center;/ */
-  padding-top: 1rem;
-  width: 100%;
-  /* background-color: tomato; */
-}
+/* courses.php  */
 
 .courses_enrolled {
   display: flex;
   background-color: whitesmoke;
   width: 80%;
-  height: 90%;
+  height: 75%;
   justify-content: center;
   align-self: center;
 }
 
 .course-list {
   width: 90%;
-  height: 70%;
+  height: 80%;
   display: flex;
-  justify-content: center;
+  
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  align-content: center;
   /* background-color: brown; */
 }
 .courselist-item {
   width: 100%;
-  /* background-color: cyan; */
   margin-top: 2rem;
+  display: flex;
+justify-content: center;
+}
+.courselist-table
+{
+  width: 80%;
+  height: 80%;
 }
 .courselist-table,
 .courselist-table td,
 .courselist-table th {
   border-collapse: collapse;
   border: 0.1rem black solid;
-  width: 20%;
-  padding: 1rem;
 }
 
+.courselist-table td,
+.courselist-table th {
+  padding: 0.5rem;
+}
 /* view_attendance.php */
 
 .course_attendance {
@@ -499,10 +500,10 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: tomato; */
 }
 .select {
-  width: 40%;
+  width: 100%;
+text-align: center;
 }
 
 .attendance_table {
@@ -525,7 +526,7 @@ a {
   /* background-color: brown; */
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   /* height: 20%; */
 }
 .empty_rows {
@@ -576,4 +577,40 @@ a {
 
 .schedule-item h6 {
   text-align: center;
+}
+
+
+/*myprofile.php*/
+
+.myprofile{
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  width: 50%;
+  height: 90%;
+  justify-content: space-evenly;
+  align-self: center;
+}
+
+.profile_info
+{
+  display: flex;
+  justify-content: center;
+}
+
+.profile-table {
+  width: 65%;
+  height: 100%;
+}
+.profile-table,
+.profile-table td
+
+{
+  border-collapse: collapse;
+  border: 0.1rem black solid;
+}
+.profile-table td
+{
+  /*text-align: center;*/
+  padding:0.5rem 1.5rem ;
 }

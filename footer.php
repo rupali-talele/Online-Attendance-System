@@ -10,12 +10,12 @@
         <footer class="footer">
             <div class="socialmediadiv container">
                 <div class="socialmedia">
-                    <a href="https://www.facebook.com/mitaoeofficial/" target="_blank" rel="noopener noreferrer">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
                     <img class="sociallogo" src="./images/facebook.png" alt="Facebook">
                     </a>
                 </div>
                 <div class="socialmedia">
-                    <a href="https://twitter.com/MITAOE?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" rel="noopener noreferrer">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
                     <img class="sociallogo" src="./images/twitter.png" alt="Twitter">
                     </a>
                 </div>  
